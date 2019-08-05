@@ -1,0 +1,5 @@
+Blue screen problems.
+Hi, I have windows 10 laptop
+Since 3-4 weeks it is crashing whenever I hibernate it and try to restart. I have not installed anything new on my machine.
+Exception code is STORE_EXCEPTION
+Any ideas? Thanks.

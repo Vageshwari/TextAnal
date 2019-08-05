@@ -1,0 +1,36 @@
+Containize application by running docker
+
+How to create requirements.txt?
+flask
+flasgger
+mod_wsgi
+
+How to fire Docker in windows :
+1. docker build -t 'name of image' .
+
+How to see docker process is running
+1. docker ps
+2. docker images
+
+How to run image?
+5000 port of host machine binds with 5000 port of docker machine
+1. docker run -p 5000:5000 'name of image'
+
+For api to run on host , specific ip address has to be metioned in app.run() function. Else application cannot be accessed via url
+
+Below command is for invoking development server
+CMD python flask_api.py
+
+But to do Docker deployment with Flask we need industry grade we server e.g apache , Nginx
+
+WSGI : web server gateway interface :is required betn Flask and Apache server
+
+Apache can handle user request even 1000 per second
+it routes the request to Flask appServer thro' WSGI
+
+So we will put Flask server +WSGI + Apache server in docker
+
+
+
+
+
